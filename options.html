@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Login Settings</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 400px; }
+    input { margin: 5px 0; width: 250px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 8px 16px; cursor: pointer; background-color: #007cba; color: white; border: none; border-radius: 4px; }
+    button:hover { background-color: #005a87; }
+    label { font-weight: bold; }
+    .checkbox-container { margin: 15px 0; }
+    .checkbox-container input[type="checkbox"] { width: auto; margin-right: 8px; }
+    #status { margin-top: 10px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>College Auto Login Settings</h2>
+  
+  <label>Username:</label><br>
+  <input type="text" id="username" placeholder="Enter your username"><br><br>
+  
+  <label>Password:</label><br>
+  <input type="password" id="password" placeholder="Enter your password"><br>
+  
+  <div class="checkbox-container">
+    <input type="checkbox" id="autoSubmit">
+    <label for="autoSubmit">Automatically submit login form</label>
+  </div>
+  
+  <button id="save">Save Settings</button>
+  <button id="clear" style="background-color: #dc3545; margin-left: 10px;">Clear Credentials</button>
+  
+  <p id="status"></p>
+
+  <div style="margin-top: 20px; padding: 10px; background-color: #f8f9fa; border-radius: 4px; font-size: 12px;">
+    <strong>Note:</strong> Your credentials are stored locally in your browser. Enable auto-submit only if you trust the security of your device.
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
